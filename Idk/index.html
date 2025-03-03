@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Heaven - Your Ultimate Taco Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌮 Taco Heaven</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#types">Types</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Taco Heaven</h1>
+                <p>Discover the world of delicious tacos, from traditional to fusion creations!</p>
+                <a href="#types" class="cta-button">Explore Tacos</a>
+            </div>
+        </section>
+
+        <section id="types" class="taco-types">
+            <h2>Popular Taco Types</h2>
+            <div class="taco-grid">
+                <div class="taco-card" onclick="openModal('carne-asada')">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47" alt="Carne Asada Taco">
+                    <h3>Carne Asada</h3>
+                    <p>Grilled beef marinated in citrus and spices, served with onions and cilantro.</p>
+                </div>
+                <div class="taco-card" onclick="openModal('fish')">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Fish Taco">
+                    <h3>Fish Tacos</h3>
+                    <p>Battered or grilled fish with cabbage slaw and creamy sauce.</p>
+                </div>
+                <div class="taco-card" onclick="openModal('al-pastor')">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47" alt="Al Pastor Taco">
+                    <h3>Al Pastor</h3>
+                    <p>Marinated pork with pineapple, served with onions and cilantro.</p>
+                </div>
+                <div class="taco-card" onclick="openModal('veggie')">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Veggie Taco">
+                    <h3>Veggie Tacos</h3>
+                    <p>Grilled vegetables with black beans and avocado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Taco Type Modals -->
+        <div id="carne-asada-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('carne-asada')">&times;</span>
+                <h2>Carne Asada Tacos</h2>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3>History</h3>
+                        <p>Carne Asada tacos originated in northern Mexico, particularly in Sonora and Baja California. The term "carne asada" means "grilled meat" in Spanish, and this style of taco became popular in the United States through Mexican immigrants in the southwestern states.</p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Traditional Ingredients</h3>
+                        <ul>
+                            <li>Flank steak or skirt steak</li>
+                            <li>Fresh lime juice</li>
+                            <li>Garlic</li>
+                            <li>Cumin</li>
+                            <li>Chili powder</li>
+                            <li>Corn tortillas</li>
+                            <li>White onion</li>
+                            <li>Fresh cilantro</li>
+                            <li>Guacamole (optional)</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Detailed Recipe</h3>
+                        <div class="recipe-details">
+                            <div class="prep-info">
+                                <p><strong>Prep Time:</strong> 30 minutes</p>
+                                <p><strong>Marinating Time:</strong> 4-6 hours</p>
+                                <p><strong>Cook Time:</strong> 15-20 minutes</p>
+                                <p><strong>Servings:</strong> 4-6</p>
+                            </div>
+                            <div class="ingredients-list">
+                                <h4>For the Marinade:</h4>
+                                <ul>
+                                    <li>1/4 cup fresh lime juice</li>
+                                    <li>2 cloves garlic, minced</li>
+                                    <li>1 tsp ground cumin</li>
+                                    <li>1 tsp chili powder</li>
+                                    <li>1/4 cup olive oil</li>
+                                    <li>1 tsp dried oregano</li>
+                                    <li>1/2 tsp smoked paprika</li>
+                                    <li>Salt and pepper to taste</li>
+                                </ul>
+                                <h4>For the Tacos:</h4>
+                                <ul>
+                                    <li>1.5 lbs flank steak or skirt steak</li>
+                                    <li>12-16 corn tortillas</li>
+                                    <li>1 large white onion, diced</li>
+                                    <li>1 bunch fresh cilantro, chopped</li>
+                                    <li>2 limes, cut into wedges</li>
+                                    <li>Optional: Guacamole, salsa, or hot sauce</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol>
+                                    <li>Prepare the marinade:
+                                        <ul>
+                                            <li>In a bowl, whisk together lime juice, garlic, cumin, chili powder, olive oil, oregano, and smoked paprika</li>
+                                            <li>Season with salt and pepper to taste</li>
+                                            <li>For extra flavor, add a splash of orange juice or a few drops of Worcestershire sauce</li>
+                                        </ul>
+                                    </li>
+                                    <li>Marinate the steak:
+                                        <ul>
+                                            <li>Place steak in a resealable plastic bag or shallow dish</li>
+                                            <li>Pour marinade over the steak, ensuring it's completely coated</li>
+                                            <li>Refrigerate for 4-6 hours, or overnight for maximum flavor</li>
+                                            <li>Remove from refrigerator 30 minutes before grilling</li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare the grill:
+                                        <ul>
+                                            <li>Preheat grill to high heat (450-500°F)</li>
+                                            <li>Clean and oil the grates to prevent sticking</li>
+                                            <li>For gas grills, preheat all burners</li>
+                                            <li>For charcoal grills, wait until coals are white-hot</li>
+                                        </ul>
+                                    </li>
+                                    <li>Grill the steak:
+                                        <ul>
+                                            <li>Remove steak from marinade, letting excess drip off</li>
+                                            <li>Place on hot grill and cook for 4-6 minutes per side</li>
+                                            <li>For medium-rare, aim for internal temperature of 135°F</li>
+                                            <li>Let rest for 5-10 minutes before slicing</li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare toppings:
+                                        <ul>
+                                            <li>Dice white onion into small pieces</li>
+                                            <li>Chop fresh cilantro, removing thick stems</li>
+                                            <li>Warm tortillas on the grill or in a dry skillet</li>
+                                            <li>Keep tortillas warm in a clean kitchen towel</li>
+                                        </ul>
+                                    </li>
+                                    <li>Assemble tacos:
+                                        <ul>
+                                            <li>Slice steak thinly against the grain</li>
+                                            <li>Place warm tortilla on a plate</li>
+                                            <li>Add meat, onions, and cilantro</li>
+                                            <li>Serve with lime wedges and optional toppings</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="tips">
+                                <h4>Pro Tips:</h4>
+                                <ul>
+                                    <li>Always slice the steak against the grain for tender pieces</li>
+                                    <li>For extra tender meat, you can use a meat tenderizer before marinating</li>
+                                    <li>Warm tortillas briefly on the grill for extra flavor</li>
+                                    <li>Double-wrap tortillas to prevent breaking</li>
+                                    <li>Let the meat rest before slicing to retain juices</li>
+                                </ul>
+                            </div>
+                            <div class="variations">
+                                <h4>Variations:</h4>
+                                <ul>
+                                    <li>Add grilled bell peppers and onions for fajita-style tacos</li>
+                                    <li>Top with crumbled queso fresco or cotija cheese</li>
+                                    <li>Serve with a spicy chipotle sauce</li>
+                                    <li>Add pickled red onions for extra tang</li>
+                                    <li>Try different tortilla types (flour, blue corn, etc.)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fish-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('fish')">&times;</span>
+                <h2>Fish Tacos</h2>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3>History</h3>
+                        <p>Fish tacos originated in Baja California, Mexico, particularly in the coastal regions. They were popularized in the United States in the 1980s and have since become a beloved dish across the country. The Baja-style fish taco features battered and fried fish, while other regions prefer grilled fish.</p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Traditional Ingredients</h3>
+                        <ul>
+                            <li>White fish (cod, halibut, or tilapia)</li>
+                            <li>Beer batter</li>
+                            <li>Corn tortillas</li>
+                            <li>Shredded cabbage</li>
+                            <li>Chipotle sauce</li>
+                            <li>Lime</li>
+                            <li>Avocado</li>
+                            <li>Mexican crema</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Detailed Recipe</h3>
+                        <div class="recipe-details">
+                            <div class="prep-info">
+                                <p><strong>Prep Time:</strong> 25 minutes</p>
+                                <p><strong>Cook Time:</strong> 15-20 minutes</p>
+                                <p><strong>Servings:</strong> 4-6</p>
+                            </div>
+                            <div class="ingredients-list">
+                                <h4>For the Fish:</h4>
+                                <ul>
+                                    <li>1 lb white fish (cod, halibut, or tilapia)</li>
+                                    <li>1 cup all-purpose flour</li>
+                                    <li>1 cup beer (preferably Mexican lager)</li>
+                                    <li>1 tsp baking powder</li>
+                                    <li>1/2 tsp salt</li>
+                                    <li>1/2 tsp ground cumin</li>
+                                    <li>1/2 tsp chili powder</li>
+                                </ul>
+                                <h4>For the Slaw:</h4>
+                                <ul>
+                                    <li>2 cups shredded cabbage</li>
+                                    <li>1/4 cup red onion, thinly sliced</li>
+                                    <li>1/4 cup fresh cilantro, chopped</li>
+                                    <li>2 tbsp lime juice</li>
+                                    <li>1/4 cup mayonnaise</li>
+                                    <li>Salt and pepper to taste</li>
+                                </ul>
+                                <h4>For the Sauce:</h4>
+                                <ul>
+                                    <li>1/2 cup Mexican crema or sour cream</li>
+                                    <li>2 tbsp chipotle sauce</li>
+                                    <li>1 tbsp lime juice</li>
+                                    <li>1 clove garlic, minced</li>
+                                </ul>
+                                <h4>Additional:</h4>
+                                <ul>
+                                    <li>12-16 corn tortillas</li>
+                                    <li>2 limes, cut into wedges</li>
+                                    <li>Vegetable oil for frying</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol>
+                                    <li>Prepare the batter:
+                                        <ul>
+                                            <li>In a bowl, whisk together flour, beer, baking powder, salt, cumin, and chili powder</li>
+                                            <li>Let batter rest for 15 minutes to allow bubbles to form</li>
+                                            <li>Consistency should be like pancake batter - add more beer if too thick</li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare the fish:
+                                        <ul>
+                                            <li>Cut fish into 1-inch strips</li>
+                                            <li>Pat dry with paper towels</li>
+                                            <li>Season with salt and pepper</li>
+                                            <li>Dredge in flour before dipping in batter</li>
+                                        </ul>
+                                    </li>
+                                    <li>Make the slaw:
+                                        <ul>
+                                            <li>Mix shredded cabbage, red onion, and cilantro</li>
+                                            <li>In a separate bowl, whisk mayonnaise and lime juice</li>
+                                            <li>Combine dressing with cabbage mixture</li>
+                                            <li>Season with salt and pepper</li>
+                                            <li>Let sit for 15 minutes to soften</li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare the sauce:
+                                        <ul>
+                                            <li>Mix Mexican crema with chipotle sauce</li>
+                                            <li>Add lime juice and garlic</li>
+                                            <li>Whisk until smooth</li>
+                                            <li>Refrigerate until ready to use</li>
+                                        </ul>
+                                    </li>
+                                    <li>Fry the fish:
+                                        <ul>
+                                            <li>Heat oil to 350°F in a deep skillet or pot</li>
+                                            <li>Dip fish strips in batter, letting excess drip off</li>
+                                            <li>Fry in batches until golden brown (3-4 minutes)</li>
+                                            <li>Drain on paper towels</li>
+                                            <li>Keep warm in a 200°F oven</li>
+                                        </ul>
+                                    </li>
+                                    <li>Assemble tacos:
+                                        <ul>
+                                            <li>Warm tortillas in a dry skillet or on the grill</li>
+                                            <li>Place fish strips in tortillas</li>
+                                            <li>Top with slaw and sauce</li>
+                                            <li>Serve with lime wedges</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="tips">
+                                <h4>Pro Tips:</h4>
+                                <ul>
+                                    <li>Use a thermometer to maintain consistent oil temperature</li>
+                                    <li>Don't overcrowd the pan when frying</li>
+                                    <li>For extra crunch, double-dip the fish in batter</li>
+                                    <li>Make slaw ahead of time for better flavor</li>
+                                    <li>Keep tortillas warm in a clean kitchen towel</li>
+                                </ul>
+                            </div>
+                            <div class="variations">
+                                <h4>Variations:</h4>
+                                <ul>
+                                    <li>Try grilled fish instead of fried</li>
+                                    <li>Add mango salsa for sweetness</li>
+                                    <li>Use flour tortillas for a different texture</li>
+                                    <li>Add avocado slices or guacamole</li>
+                                    <li>Try different fish types (shrimp, mahi-mahi, etc.)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="al-pastor-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('al-pastor')">&times;</span>
+                <h2>Al Pastor Tacos</h2>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3>History</h3>
+                        <p>Al Pastor tacos have their origins in Lebanese shawarma, brought to Mexico by Lebanese immigrants in the 19th century. The name "al pastor" means "in the style of the shepherd" in Spanish. The dish evolved to use pork instead of lamb and incorporated Mexican spices and pineapple.</p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Traditional Ingredients</h3>
+                        <ul>
+                            <li>Pork shoulder</li>
+                            <li>Achiote paste</li>
+                            <li>Pineapple</li>
+                            <li>Corn tortillas</li>
+                            <li>White onion</li>
+                            <li>Cilantro</li>
+                            <li>Lime</li>
+                            <li>Chili peppers</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Detailed Recipe</h3>
+                        <div class="recipe-details">
+                            <div class="prep-info">
+                                <p><strong>Prep Time:</strong> 30 minutes</p>
+                                <p><strong>Marinating Time:</strong> 4-6 hours</p>
+                                <p><strong>Cook Time:</strong> 20-25 minutes</p>
+                                <p><strong>Servings:</strong> 4-6</p>
+                            </div>
+                            <div class="ingredients-list">
+                                <h4>For the Marinade:</h4>
+                                <ul>
+                                    <li>2 tbsp achiote paste</li>
+                                    <li>1/4 cup white vinegar</li>
+                                    <li>3 cloves garlic, minced</li>
+                                    <li>1 tsp ground cumin</li>
+                                    <li>1 tsp dried oregano</li>
+                                    <li>1/2 tsp ground cinnamon</li>
+                                    <li>1/4 cup pineapple juice</li>
+                                    <li>2 tbsp chili powder</li>
+                                    <li>Salt and pepper to taste</li>
+                                </ul>
+                                <h4>For the Pork:</h4>
+                                <ul>
+                                    <li>2 lbs pork shoulder, thinly sliced</li>
+                                    <li>1 pineapple, peeled and sliced</li>
+                                    <li>1 large white onion, sliced</li>
+                                    <li>1 bunch fresh cilantro, chopped</li>
+                                    <li>12-16 corn tortillas</li>
+                                    <li>2 limes, cut into wedges</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol>
+                                    <li>Prepare the marinade:
+                                        <ul>
+                                            <li>In a blender, combine achiote paste, vinegar, garlic, and spices</li>
+                                            <li>Add pineapple juice and blend until smooth</li>
+                                            <li>Season with salt and pepper</li>
+                                            <li>For extra flavor, add a few drops of orange juice</li>
+                                        </ul>
+                                    </li>
+                                    <li>Marinate the pork:
+                                        <ul>
+                                            <li>Slice pork shoulder thinly (1/4 inch)</li>
+                                            <li>Place in a large bowl or resealable bag</li>
+                                            <li>Pour marinade over pork, ensuring even coverage</li>
+                                            <li>Refrigerate for 4-6 hours</li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare the trompo:
+                                        <ul>
+                                            <li>If using a vertical spit, layer marinated pork</li>
+                                            <li>Add pineapple slices between layers</li>
+                                            <li>For stovetop method, prepare a large skillet</li>
+                                        </ul>
+                                    </li>
+                                    <li>Cook the meat:
+                                        <ul>
+                                            <li>For vertical spit:
+                                                <ul>
+                                                    <li>Cook over high heat, rotating frequently</li>
+                                                    <li>Shave off thin slices as it cooks</li>
+                                                </ul>
+                                            </li>
+                                            <li>For stovetop:
+                                                <ul>
+                                                    <li>Heat large skillet over medium-high heat</li>
+                                                    <li>Cook pork in batches until browned</li>
+                                                    <li>Add pineapple slices to caramelize</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare toppings:
+                                        <ul>
+                                            <li>Slice white onion thinly</li>
+                                            <li>Chop fresh cilantro</li>
+                                            <li>Warm tortillas on the grill or in a skillet</li>
+                                        </ul>
+                                    </li>
+                                    <li>Assemble tacos:
+                                        <ul>
+                                            <li>Place warm tortilla on plate</li>
+                                            <li>Add pork slices</li>
+                                            <li>Top with caramelized pineapple</li>
+                                            <li>Add onions and cilantro</li>
+                                            <li>Serve with lime wedges</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="tips">
+                                <h4>Pro Tips:</h4>
+                                <ul>
+                                    <li>For authentic flavor, use achiote paste</li>
+                                    <li>Slice pork thinly for better marinade penetration</li>
+                                    <li>Caramelize pineapple for extra sweetness</li>
+                                    <li>Keep tortillas warm in a clean kitchen towel</li>
+                                    <li>Double-wrap tortillas to prevent breaking</li>
+                                </ul>
+                            </div>
+                            <div class="variations">
+                                <h4>Variations:</h4>
+                                <ul>
+                                    <li>Try chicken instead of pork</li>
+                                    <li>Add pickled red onions</li>
+                                    <li>Top with crumbled queso fresco</li>
+                                    <li>Serve with a spicy salsa</li>
+                                    <li>Use flour tortillas for a different texture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="veggie-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('veggie')">&times;</span>
+                <h2>Veggie Tacos</h2>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3>History</h3>
+                        <p>Vegetarian tacos have been part of Mexican cuisine for centuries, with beans and vegetables being staple ingredients. Modern veggie tacos have evolved to include a wide variety of vegetables and plant-based proteins, becoming popular among health-conscious eaters and vegetarians.</p>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Traditional Ingredients</h3>
+                        <ul>
+                            <li>Black beans</li>
+                            <li>Bell peppers</li>
+                            <li>Onions</li>
+                            <li>Zucchini</li>
+                            <li>Corn tortillas</li>
+                            <li>Avocado</li>
+                            <li>Lime</li>
+                            <li>Mexican spices</li>
+                        </ul>
+                    </div>
+                    <div class="modal-section">
+                        <h3>Detailed Recipe</h3>
+                        <div class="recipe-details">
+                            <div class="prep-info">
+                                <p><strong>Prep Time:</strong> 20 minutes</p>
+                                <p><strong>Cook Time:</strong> 15-20 minutes</p>
+                                <p><strong>Servings:</strong> 4-6</p>
+                            </div>
+                            <div class="ingredients-list">
+                                <h4>For the Vegetables:</h4>
+                                <ul>
+                                    <li>2 bell peppers (red, yellow, or green)</li>
+                                    <li>1 large onion</li>
+                                    <li>2 medium zucchinis</li>
+                                    <li>1 cup black beans (canned or cooked)</li>
+                                    <li>2 tbsp olive oil</li>
+                                    <li>1 tsp ground cumin</li>
+                                    <li>1 tsp chili powder</li>
+                                    <li>1/2 tsp smoked paprika</li>
+                                    <li>Salt and pepper to taste</li>
+                                </ul>
+                                <h4>For the Toppings:</h4>
+                                <ul>
+                                    <li>2 ripe avocados</li>
+                                    <li>1 bunch fresh cilantro</li>
+                                    <li>1 lime</li>
+                                    <li>12-16 corn tortillas</li>
+                                    <li>Optional: Mexican crema or sour cream</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol>
+                                    <li>Prepare the vegetables:
+                                        <ul>
+                                            <li>Slice bell peppers into strips</li>
+                                            <li>Dice onion into medium pieces</li>
+                                            <li>Cut zucchini into half-moons</li>
+                                            <li>Rinse and drain black beans</li>
+                                        </ul>
+                                    </li>
+                                    <li>Season the vegetables:
+                                        <ul>
+                                            <li>In a bowl, toss vegetables with olive oil</li>
+                                            <li>Add cumin, chili powder, and smoked paprika</li>
+                                            <li>Season with salt and pepper</li>
+                                            <li>Let sit for 10 minutes to absorb flavors</li>
+                                        </ul>
+                                    </li>
+                                    <li>Cook the vegetables:
+                                        <ul>
+                                            <li>Heat a large skillet over medium-high heat</li>
+                                            <li>Add seasoned vegetables</li>
+                                            <li>Cook until slightly charred and tender</li>
+                                            <li>Add black beans and heat through</li>
+                                        </ul>
+                                    </li>
+                                    <li>Prepare toppings:
+                                        <ul>
+                                            <li>Slice avocado thinly</li>
+                                            <li>Chop fresh cilantro</li>
+                                            <li>Warm tortillas in a dry skillet</li>
+                                            <li>Cut lime into wedges</li>
+                                        </ul>
+                                    </li>
+                                    <li>Assemble tacos:
+                                        <ul>
+                                            <li>Place warm tortilla on plate</li>
+                                            <li>Add vegetable mixture</li>
+                                            <li>Top with avocado slices</li>
+                                            <li>Add cilantro and a squeeze of lime</li>
+                                            <li>Optional: Drizzle with Mexican crema</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="tips">
+                                <h4>Pro Tips:</h4>
+                                <ul>
+                                    <li>Don't overcook vegetables - they should be slightly crisp</li>
+                                    <li>Use a mix of colored bell peppers for visual appeal</li>
+                                    <li>Add a pinch of sugar to balance acidity</li>
+                                    <li>Keep tortillas warm in a clean kitchen towel</li>
+                                    <li>Double-wrap tortillas to prevent breaking</li>
+                                </ul>
+                            </div>
+                            <div class="variations">
+                                <h4>Variations:</h4>
+                                <ul>
+                                    <li>Add grilled portobello mushrooms</li>
+                                    <li>Include roasted corn kernels</li>
+                                    <li>Top with crumbled queso fresco</li>
+                                    <li>Add pickled jalapeños</li>
+                                    <li>Try different bean varieties (pinto, kidney)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="recipes" class="recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-grid">
+                <!-- Recipe cards will be dynamically inserted here -->
+            </div>
+            <div class="recipe-controls">
+                <button class="nav-button prev" onclick="switchToPreviousRecipe()" aria-label="Previous recipe">❮</button>
+                <div class="recipe-indicators">
+                    <button class="recipe-indicator active" onclick="switchRecipe(0)" aria-label="Go to recipe 1"></button>
+                    <button class="recipe-indicator" onclick="switchRecipe(1)" aria-label="Go to recipe 2"></button>
+                </div>
+                <button class="nav-button next" onclick="switchToNextRecipe()" aria-label="Next recipe">❯</button>
+            </div>
+        </section>
+
+        <section id="history" class="history">
+            <h2>Taco History</h2>
+            <div class="history-content">
+                <p>Tacos have a rich history dating back to the Mexican silver mines in the 18th century. The word "taco" originally referred to the small charges used to excavate ore. Miners would wrap their food in tortillas, creating what we now know as tacos.</p>
+                <p>Today, tacos have evolved into a global phenomenon, with countless variations and fusion creations. From street tacos to gourmet versions, they continue to capture hearts and taste buds worldwide.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Share Your Taco Story</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Taco Story:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Story</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taco Heaven. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
